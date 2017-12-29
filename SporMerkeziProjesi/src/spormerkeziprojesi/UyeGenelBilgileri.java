@@ -27,20 +27,228 @@ public class UyeGenelBilgileri extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        grp_1 = new javax.swing.ButtonGroup();
+        grp_2 = new javax.swing.ButtonGroup();
+        grp_3 = new javax.swing.ButtonGroup();
+        grp_4 = new javax.swing.ButtonGroup();
+        grp_5 = new javax.swing.ButtonGroup();
+        grp_6 = new javax.swing.ButtonGroup();
+        grp_7 = new javax.swing.ButtonGroup();
+        grp_8 = new javax.swing.ButtonGroup();
+        grp_9 = new javax.swing.ButtonGroup();
+        grp_10 = new javax.swing.ButtonGroup();
+        grp_11 = new javax.swing.ButtonGroup();
+        grp_12 = new javax.swing.ButtonGroup();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        rbtn_11 = new javax.swing.JRadioButton();
+        rbtn_12 = new javax.swing.JRadioButton();
+        rbtn_21 = new javax.swing.JRadioButton();
+        rbtn_22 = new javax.swing.JRadioButton();
+        rbtn_31 = new javax.swing.JRadioButton();
+        rbtn_32 = new javax.swing.JRadioButton();
+        rbtn_41 = new javax.swing.JRadioButton();
+        rbtn_42 = new javax.swing.JRadioButton();
+        rbtn_51 = new javax.swing.JRadioButton();
+        rbtn_52 = new javax.swing.JRadioButton();
+        rbtn_61 = new javax.swing.JRadioButton();
+        rbtn_62 = new javax.swing.JRadioButton();
+        rbtn_71 = new javax.swing.JRadioButton();
+        rbtn_72 = new javax.swing.JRadioButton();
+        rbtn_81 = new javax.swing.JRadioButton();
+        rbtn_82 = new javax.swing.JRadioButton();
+        rbtn_91 = new javax.swing.JRadioButton();
+        rbtn_92 = new javax.swing.JRadioButton();
+        rbtn_101 = new javax.swing.JRadioButton();
+        rbtn_102 = new javax.swing.JRadioButton();
+        rbtn_111 = new javax.swing.JRadioButton();
+        rbtn_112 = new javax.swing.JRadioButton();
+        rbtn_121 = new javax.swing.JRadioButton();
+        rbtn_122 = new javax.swing.JRadioButton();
+        jLabel16 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+        btnTemizle = new javax.swing.JButton();
+        btnGuncelle = new javax.swing.JButton();
+        btnKaydet = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 640, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 421, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Üye Sporsal ve Sağlık Bilgileri");
+        setMinimumSize(new java.awt.Dimension(650, 600));
+        setPreferredSize(new java.awt.Dimension(650, 600));
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel1.setText("Daha önce bir spor salonu kayıt olmuş mu?");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 341, 20));
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel2.setText("Lisanslı bir spor yapmış mı?");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 293, 20));
+
+        jLabel3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel3.setText("Grup egzersizlerine katılmış mı?");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 293, 20));
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel4.setText("Grup egzersizlerine katılmış mı?");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, 293, 20));
+
+        jLabel5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel5.setText("Yüzme biliyor mu?");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, 293, 20));
+
+        jLabel6.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel6.setText("Daha önce ilgilendiği (amatör) spo branşı var mı?");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 365, 20));
+
+        jLabel7.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel7.setText("Salona kayıt amacı?");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 293, 20));
+
+        jLabel8.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel8.setText("Sigara kullanıyor mu?");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 293, -1));
+
+        jLabel9.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel9.setText("Herhangi bir ameliyet geçirmiş mi?");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 293, -1));
+
+        jLabel10.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel10.setText("Kalp, astım,... gibi hastalıkları mevcut mu?");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 293, -1));
+
+        jLabel11.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel11.setText("Sürekli ilanç bullanması gerekden bir durumu var mı?");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel12.setText("Destekleyici gıda takviyesi alıyor mu?");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel13.setText("SPORSAL BİLGİLER");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 293, -1));
+
+        jLabel14.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel14.setText("SAĞLIK BİLGİERİ");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 293, -1));
+
+        jLabel15.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel15.setText("Evet");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+
+        jLabel17.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel17.setText("Hayır");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, -1, -1));
+
+        grp_1.add(rbtn_11);
+        getContentPane().add(rbtn_11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, -1, 19));
+
+        grp_1.add(rbtn_12);
+        getContentPane().add(rbtn_12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, 19));
+
+        grp_2.add(rbtn_21);
+        getContentPane().add(rbtn_21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, 19));
+
+        grp_2.add(rbtn_22);
+        getContentPane().add(rbtn_22, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, -1, 19));
+
+        grp_3.add(rbtn_31);
+        getContentPane().add(rbtn_31, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, 19));
+
+        grp_3.add(rbtn_32);
+        getContentPane().add(rbtn_32, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, -1, 19));
+
+        grp_4.add(rbtn_41);
+        getContentPane().add(rbtn_41, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, 19));
+
+        grp_4.add(rbtn_42);
+        getContentPane().add(rbtn_42, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, -1, 19));
+
+        grp_5.add(rbtn_51);
+        getContentPane().add(rbtn_51, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, 19));
+
+        grp_5.add(rbtn_52);
+        getContentPane().add(rbtn_52, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, 19));
+
+        grp_6.add(rbtn_61);
+        getContentPane().add(rbtn_61, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, 19));
+
+        grp_6.add(rbtn_62);
+        getContentPane().add(rbtn_62, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, -1, 19));
+
+        grp_7.add(rbtn_71);
+        getContentPane().add(rbtn_71, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, 19));
+
+        grp_7.add(rbtn_72);
+        getContentPane().add(rbtn_72, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, 19));
+
+        grp_8.add(rbtn_81);
+        getContentPane().add(rbtn_81, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, 19));
+
+        grp_8.add(rbtn_82);
+        getContentPane().add(rbtn_82, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, -1, 19));
+
+        grp_9.add(rbtn_91);
+        getContentPane().add(rbtn_91, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, 19));
+
+        grp_9.add(rbtn_92);
+        getContentPane().add(rbtn_92, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, 19));
+
+        grp_10.add(rbtn_101);
+        getContentPane().add(rbtn_101, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, 19));
+
+        grp_10.add(rbtn_102);
+        getContentPane().add(rbtn_102, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, 19));
+
+        grp_11.add(rbtn_111);
+        getContentPane().add(rbtn_111, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, 19));
+
+        grp_11.add(rbtn_112);
+        getContentPane().add(rbtn_112, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, -1, 19));
+
+        grp_12.add(rbtn_121);
+        getContentPane().add(rbtn_121, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, 19));
+
+        grp_12.add(rbtn_122);
+        getContentPane().add(rbtn_122, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, 19));
+
+        jLabel16.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel16.setText("DİĞER KONULAR");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 370, -1, -1));
+
+        jTextPane1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jScrollPane2.setViewportView(jTextPane1);
+
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 370, 80));
+
+        btnTemizle.setText("Temizle");
+        getContentPane().add(btnTemizle, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 510, -1, -1));
+
+        btnGuncelle.setText("Güncelle");
+        getContentPane().add(btnGuncelle, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 510, -1, -1));
+
+        btnKaydet.setText("Kaydet");
+        getContentPane().add(btnKaydet, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 510, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -79,5 +287,63 @@ public class UyeGenelBilgileri extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnGuncelle;
+    private javax.swing.JButton btnKaydet;
+    private javax.swing.JButton btnTemizle;
+    private javax.swing.ButtonGroup grp_1;
+    private javax.swing.ButtonGroup grp_10;
+    private javax.swing.ButtonGroup grp_11;
+    private javax.swing.ButtonGroup grp_12;
+    private javax.swing.ButtonGroup grp_2;
+    private javax.swing.ButtonGroup grp_3;
+    private javax.swing.ButtonGroup grp_4;
+    private javax.swing.ButtonGroup grp_5;
+    private javax.swing.ButtonGroup grp_6;
+    private javax.swing.ButtonGroup grp_7;
+    private javax.swing.ButtonGroup grp_8;
+    private javax.swing.ButtonGroup grp_9;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JRadioButton rbtn_101;
+    private javax.swing.JRadioButton rbtn_102;
+    private javax.swing.JRadioButton rbtn_11;
+    private javax.swing.JRadioButton rbtn_111;
+    private javax.swing.JRadioButton rbtn_112;
+    private javax.swing.JRadioButton rbtn_12;
+    private javax.swing.JRadioButton rbtn_121;
+    private javax.swing.JRadioButton rbtn_122;
+    private javax.swing.JRadioButton rbtn_21;
+    private javax.swing.JRadioButton rbtn_22;
+    private javax.swing.JRadioButton rbtn_31;
+    private javax.swing.JRadioButton rbtn_32;
+    private javax.swing.JRadioButton rbtn_41;
+    private javax.swing.JRadioButton rbtn_42;
+    private javax.swing.JRadioButton rbtn_51;
+    private javax.swing.JRadioButton rbtn_52;
+    private javax.swing.JRadioButton rbtn_61;
+    private javax.swing.JRadioButton rbtn_62;
+    private javax.swing.JRadioButton rbtn_71;
+    private javax.swing.JRadioButton rbtn_72;
+    private javax.swing.JRadioButton rbtn_81;
+    private javax.swing.JRadioButton rbtn_82;
+    private javax.swing.JRadioButton rbtn_91;
+    private javax.swing.JRadioButton rbtn_92;
     // End of variables declaration//GEN-END:variables
 }
