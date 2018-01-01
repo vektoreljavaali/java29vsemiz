@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package spormerkeziprojesi;
+package spormerkeziprojesi.View;
 
 /**
  *
  * @author sd
  */
-public class UyeGenelBilgileri extends javax.swing.JFrame {
+public class FrmUyeGenelBilgileri extends javax.swing.JFrame {
 
     /**
      * Creates new form UyeGenelBilgileri
      */
-    public UyeGenelBilgileri() {
+    public FrmUyeGenelBilgileri() {
         initComponents();
     }
 
@@ -86,7 +86,7 @@ public class UyeGenelBilgileri extends javax.swing.JFrame {
         btnGuncelle = new javax.swing.JButton();
         btnKaydet = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Üye Sporsal ve Sağlık Bilgileri");
         setMinimumSize(new java.awt.Dimension(650, 600));
         setPreferredSize(new java.awt.Dimension(650, 600));
@@ -268,20 +268,21 @@ public class UyeGenelBilgileri extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(UyeGenelBilgileri.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmUyeGenelBilgileri.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(UyeGenelBilgileri.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmUyeGenelBilgileri.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(UyeGenelBilgileri.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmUyeGenelBilgileri.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(UyeGenelBilgileri.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmUyeGenelBilgileri.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new UyeGenelBilgileri().setVisible(true);
+                new FrmUyeGenelBilgileri().setVisible(true);
             }
         });
     }
