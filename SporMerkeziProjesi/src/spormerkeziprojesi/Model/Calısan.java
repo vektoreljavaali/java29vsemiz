@@ -9,9 +9,41 @@ package spormerkeziprojesi.Model;
  *
  * @author sd
  */
-public class Calısan {
-    int kacYıllıkCalısan;
-    int tecrubeYili;
-    int maas;
-    String calismaSaati;
+public class Calısan extends Kisi{
+    private int kacYıllıkCalısan;
+    private int tecrubeYili;
+    private int maas;
+    private String calismaSaati;
+
+    public int getKacYıllıkCalısan() {
+        return kacYıllıkCalısan;
+    }
+
+    public void setKacYıllıkCalısan(int kacYıllıkCalısan) {
+        this.kacYıllıkCalısan = kacYıllıkCalısan;
+    }
+
+    public int getTecrubeYili() {
+        return tecrubeYili;
+    }
+
+    public void setTecrubeYili(int tecrubeYili) {
+        this.tecrubeYili = tecrubeYili;
+    }
+
+    public int getMaas() {
+        return maas;
+    }
+
+    public void setMaas(int maas) {
+        this.maas = maas;
+    }
+
+    public String getCalismaSaati() {
+        return calismaSaati;
+    }
+
+    public void setCalismaSaati(String calismaSaati) {
+        this.calismaSaati = calismaSaati;
+    }
 }

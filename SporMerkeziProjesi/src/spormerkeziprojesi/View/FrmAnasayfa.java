@@ -5,6 +5,8 @@
  */
 package spormerkeziprojesi.View;
 
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -19,6 +21,10 @@ import javax.swing.Timer;
  */
 public class FrmAnasayfa extends javax.swing.JFrame {
 
+    GridBagLayout lo = new GridBagLayout();
+    FrmUyeKayit uyeKayit;
+    FrmMusteriKayit musteriKayit;
+
     /**
      * Creates new form FrmAnasayfa
      */
@@ -27,6 +33,20 @@ public class FrmAnasayfa extends javax.swing.JFrame {
         setIcon();
         tarih();
         saat();
+
+        uyeKayit = new FrmUyeKayit();
+        musteriKayit = new FrmMusteriKayit();
+        panelAnaEkran.setLayout(lo);
+        GridBagConstraints c = new GridBagConstraints();
+        c.gridx = 0;
+        c.gridy = 0;
+        panelAnaEkran.add(uyeKayit, c);
+        c.gridx = 0;
+        c.gridy = 0;
+        panelAnaEkran.add(musteriKayit, c);
+        
+        musteriKayit.setVisible(false);
+        uyeKayit.setVisible(false);
 
     }
 
@@ -82,7 +102,7 @@ public class FrmAnasayfa extends javax.swing.JFrame {
         lblTarih = new javax.swing.JLabel();
         lblSaat = new javax.swing.JLabel();
         btnArama = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        panelAnaEkran = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Spor Merkezi Sistemi");
@@ -221,32 +241,39 @@ public class FrmAnasayfa extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(10, 10, 170, 540);
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        panelAnaEkran.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panelAnaEkranLayout = new javax.swing.GroupLayout(panelAnaEkran);
+        panelAnaEkran.setLayout(panelAnaEkranLayout);
+        panelAnaEkranLayout.setHorizontalGroup(
+            panelAnaEkranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 586, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelAnaEkranLayout.setVerticalGroup(
+            panelAnaEkranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 536, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(190, 10, 590, 540);
+        getContentPane().add(panelAnaEkran);
+        panelAnaEkran.setBounds(190, 10, 590, 540);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMusteriKayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMusteriKayitActionPerformed
-        FrmMusteriKayit musteriKayit = new FrmMusteriKayit();
+
         musteriKayit.setVisible(true);
+        uyeKayit.setVisible(false);
+
+//        FrmMusteriKayit musteriKayit = new FrmMusteriKayit();
+//        musteriKayit.setVisible(true);
     }//GEN-LAST:event_btnMusteriKayitActionPerformed
 
     private void btnUyeKayitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUyeKayitActionPerformed
+        musteriKayit.setVisible(false);
+        uyeKayit.setVisible(true);
+
         FrmUyeKayit uyeKayit = new FrmUyeKayit();
         uyeKayit.setVisible(true);
     }//GEN-LAST:event_btnUyeKayitActionPerformed
@@ -343,12 +370,12 @@ public class FrmAnasayfa extends javax.swing.JFrame {
     private javax.swing.JButton btnUyeKayit;
     private javax.swing.JButton btnUyeTakip;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JLabel lblSaat;
     private javax.swing.JLabel lblTarih;
+    private javax.swing.JPanel panelAnaEkran;
     // End of variables declaration//GEN-END:variables
 
 }

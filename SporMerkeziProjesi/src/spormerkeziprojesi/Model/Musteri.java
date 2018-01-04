@@ -9,6 +9,6 @@ package spormerkeziprojesi.Model;
  *
  * @author sd
  */
-public class Musteri {
-    
+public class Musteri extends Kisi{
+    int musteriNo;
 }
