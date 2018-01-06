@@ -9,7 +9,7 @@ package spormerkeziprojesi.Model;
  *
  * @author sd
  */
-public class Calısan extends Kisi{
+public class Calısan {
     private int kacYıllıkCalısan;
     private int tecrubeYili;
     private int maas;

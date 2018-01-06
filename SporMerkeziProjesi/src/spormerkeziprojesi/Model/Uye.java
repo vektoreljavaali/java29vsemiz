@@ -9,7 +9,7 @@ package spormerkeziprojesi.Model;
  *
  * @author sd
  */
-public class Uye extends Musteri{
+public class Uye {
     int uyeNo;
     
 }

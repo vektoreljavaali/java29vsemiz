@@ -9,7 +9,7 @@ package spormerkeziprojesi.Model;
  *
  * @author sd
  */
-public class Egitici extends Kisi {
+public class Egitici {
     private String uzmanlik;
 
     public String getUzmanlik() {
